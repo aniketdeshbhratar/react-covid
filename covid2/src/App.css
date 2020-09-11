@@ -26,29 +26,29 @@
   }
 }
 
-.card {
-  box-shadow: 0px 3px 4px #cecece;
+.card { 
   padding: 16px;
-  padding-bottom: 24px;
-  background: white;
+  background: #eff2f6;
   border-radius: 5px;
+  min-width: 145px;
+  max-width: 275px;
 }
 
 .card__title--primary {
-  font-size: 10px;
-  color: #949494;
+  font-size: 11px;
+  color: #717171;
 }
 
 .card__title--secondary{
-  font-size: 12px;
-  color: #4e4e4e;
+  font-size: 17px;
+    color: #18214d;
+    padding: 5px 0;
+    font-weight: bold;
 }
 .card__title--tertiary{
   font-size: 14px;
-  color: #2d2d2d;
+  color: #728aff;
 }
 .top__container {
-  padding-bottom: 5px;
-  border-bottom: 1px solid grey;
-  margin-bottom: 5px;
+
 }

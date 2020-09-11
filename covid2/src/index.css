@@ -1,8 +1,33 @@
 * {
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
 }
 
 body{
-  background: #f3f3f3;
+  background: #ffffff;
+  color:#18214d
+}
+
+.red{
+  color:#e22a3b!important
+}
+
+.green{
+  color:#02b110 !important
+}
+.blue{
+  color:#002bfb !important
+  
+}
+
+/* forms  */
+
+select {
+  height: 30px;
+  padding: 0px;
+  border: 1px solid #eff2f6;
+  border-radius: 6px;
+  background: #eff2f6;
+  color: #18214d;
+  outline: none;
 }

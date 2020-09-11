@@ -34,7 +34,8 @@ function App() {
         .then((data) => {
           const countries = data.map((country) => ({
               name: country.country,
-              value: country.countryInfo.iso2}));
+              value: country.countryInfo.iso2,
+              flag : country.countryInfo.flag}));
             console.log(data);
           const sortedData = sortData(data);   
           console.log(sortedData); 
@@ -94,9 +95,9 @@ function App() {
         </div> 
 
         <div className="app_stats">
-            <Infobox title="Corona cases" cases={countryInfo.todayCases} total={countryInfo.cases} />
-            <Infobox title="Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered}  />
-            <Infobox title="Deaths" cases={countryInfo.todayRecovered} total={countryInfo.deaths}  />
+            <Infobox cssClass="red" title="Active" cases={countryInfo.todayCases} total={countryInfo.cases} />
+            <Infobox cssClass="green" title="Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered}  />
+            <Infobox cssClass="blue" title="Deaths" cases={countryInfo.todayRecovered} total={countryInfo.deaths}  />
         {/* inforboxes title="cases" */}
         {/* inforboxes title="recoveries*/}
 
@@ -105,7 +106,7 @@ function App() {
         <Map/>
       </div>
       <div className="app__right card">    
-          <h3>Live cases by Counties</h3>
+          <h3>Country wise count</h3>
           <Table countries={tableData}></Table>
           <LineGraph />
           <h3>World wide new cases</h3>

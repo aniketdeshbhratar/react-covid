@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #loader {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            background-color: #000;
+            opacity: 0.7;
+            visibility: hidden;
+        }
+
+        #loader p {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 140px;
+            text-align: center;
+        }
+
+        #spinner {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #f3f3f3;
+            border-top: 3px solid #f25a41;
+            border-radius: 100%;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #loader.show {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <p>Loading Questions</p>
+        <div id="spinner"></div>
+    </div>
+
+    <!-- dont copy below code -->
+    <div class="quiz-box" id="Q6-4">
+        <div class="quiz-question"><br><strong style="font-family:'Frutiger 55 Roman'">Q6.4</strong> What production
+            deployment tool does the application use to promote changes to production?</div>
+        <div class="quiz-ans">
+
+
+            <div class="check-box-container" id="check-Q6-4">
+
+                <div class="check-box">
+                    <input type="checkbox" id="A6-4_2" name="Q6-4" value="Bladelogic">
+                    <label style="font-family:courier,helvetica;">Bladelogic</label>
+                </div>
+
+                <div class="check-box"><input type="checkbox" id="A6-4_24" name="Q6-4" value="Other/Manual"><label
+                        style="font-family:courier,helvetica;">Other/Manual</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_23" name="Q6-4" value="UBS Deploy"><label
+                        style="font-family:courier,helvetica;">UBS Deploy</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_22" name="Q6-4" value="TurnOver"><label
+                        style="font-family:courier,helvetica;">TurnOver</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_21" name="Q6-4" value="Subversion WMSB"><label
+                        style="font-family:courier,helvetica;">Subversion WMSB</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_20" name="Q6-4" value="SRLWeb"><label
+                        style="font-family:courier,helvetica;">SRLWeb</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_19" name="Q6-4" value="SMS"><label
+                        style="font-family:courier,helvetica;">SMS</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_18" name="Q6-4" value="Serena(RLC)"><label
+                        style="font-family:courier,helvetica;">Serena(RLC)</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_17" name="Q6-4" value="Savvis"><label
+                        style="font-family:courier,helvetica;">Savvis</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_16" name="Q6-4" value="SAP"><label
+                        style="font-family:courier,helvetica;">SAP</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_15" name="Q6-4" value="RoseCare"><label
+                        style="font-family:courier,helvetica;">RoseCare</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_14" name="Q6-4" value="Rfetch"><label
+                        style="font-family:courier,helvetica;">Rfetch</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_13" name="Q6-4" value="RAMP"><label
+                        style="font-family:courier,helvetica;">RAMP</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_12" name="Q6-4" value="Monitron"><label
+                        style="font-family:courier,helvetica;">Monitron</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_11" name="Q6-4" value="Jenkins J2EE"><label
+                        style="font-family:courier,helvetica;">Jenkins J2EE</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_10" name="Q6-4" value="Jenkins"><label
+                        style="font-family:courier,helvetica;">Jenkins</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_9" name="Q6-4" value="ITG"><label
+                        style="font-family:courier,helvetica;">ITG</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_8" name="Q6-4" value="Iron Chief"><label
+                        style="font-family:courier,helvetica;">Iron Chief</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_7" name="Q6-4" value="FAP Operator"><label
+                        style="font-family:courier,helvetica;">FAP Operator</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_6" name="Q6-4" value="ELVIS"><label
+                        style="font-family:courier,helvetica;">ELVIS</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_5" name="Q6-4" value="DIRT"><label
+                        style="font-family:courier,helvetica;">DIRT</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_4" name="Q6-4" value="Changeman WMSB"><label
+                        style="font-family:courier,helvetica;">Changeman WMSB</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_3" name="Q6-4" value="Changeman WMA"><label
+                        style="font-family:courier,helvetica;">Changeman WMA</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_25" name="Q6-4" value="None"><label
+                        style="font-family:courier,helvetica;">None</label></div>
+                <div class="check-box"><input type="checkbox" id="A6-4_1" name="Q6-4" value="ADT"><label
+                        style="font-family:courier,helvetica;">ADT</label></div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .check-box-container {
+            display: flex;
+            margin: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .check-box {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            min-width: 170px;
+        }
+    </style>
+    <script src="test.js"></script>
+</body>
+
+</html>
